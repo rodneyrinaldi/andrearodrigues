@@ -1,0 +1,37 @@
+.container {
+  position: fixed;
+  left: calc(88vw);
+  top: 79vh;
+}
+.container:first-child {
+  top: 65vh;
+}
+.container:nth-child(2) {
+  top: 72vh;
+}
+.container a {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.container a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .container {
+    left: calc(88vw);
+    top: 79vh;
+  }
+  .container:first-child {
+    top: 64vh;
+  }
+  .container:nth-child(2) {
+    top: 72vh;
+  }
+  .container a img {
+    width: 36px;
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 12vh;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 8vh;
+  margin-right: 20px;
+}
+
+.title {
+  font-family: "Lucida Handwriting", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.875em;
+  color: #01579b;
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 8vh;
+    border: 1px solid ##2f4f4f;
+    box-shadow: 0 4px ##2f4f4f;
+  }
+
+  .logo {
+    height: 5vh;
+  }
+
+  .title {
+    font-size: 1.075em;
+    color: #01579b;
+  }
+}
