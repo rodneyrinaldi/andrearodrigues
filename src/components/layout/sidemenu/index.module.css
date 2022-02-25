@@ -1,10 +1,11 @@
 .container {
+  z-index: 99;
   position: fixed;
   left: calc(88vw);
   top: 79vh;
 }
 .container:first-child {
-  top: 65vh;
+  top: 64vh;
 }
 .container:nth-child(2) {
   top: 72vh;

@@ -6,7 +6,7 @@ import styles from "./index.module.css";
 function SideMenu(props) {
   const router = useRouter();
   const wapp =
-    "https://api.whatsapp.com/send?phone=+551131646843&text=Olá, gostaria de obter maiores informações sobre:";
+    "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá, gostaria de obter maiores informações sobre:";
 
   return (
     <>
