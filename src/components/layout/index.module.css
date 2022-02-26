@@ -4,7 +4,43 @@
   min-height: 100vh;
 }
 
+/* .scrolldown {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  z-index: 95;
+  width: auto;
+  left: calc(46vw);
+  top: 88vh;
+} */
+
+.scrolldown {
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  z-index: 95;
+  width: auto;
+  left: calc(46vw);
+  top: 88vh;
+  transition: transform 150ms ease-in-out;
+}
+.scrolldown nav-bar--hidden {
+  transform: translateY(-100%);
+}
+
+.image {
+  width: 8vw;
+}
+
 @media (max-width: 600px) {
   .container {
+  }
+
+  .image {
+    width: 20vw;
+  }
+
+  .scrolldown {
+    top: 90vh;
   }
 }
