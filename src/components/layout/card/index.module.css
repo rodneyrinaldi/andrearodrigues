@@ -6,34 +6,40 @@
   justify-content: center;
   align-items: center;
   transition: 0.3s;
-  border: 1px solid #808080;
+  border: 1px solid #e65100;
   border-radius: 6px;
 }
 .container:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0px 5px 0px #aaaaaa, 5px 0px 5px 0px #aaaaaa;
 }
 .container p {
+  margin: 2vh 4vh;
   font-family: Arial, sans-serif;
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 2px;
 }
 .container p b {
+  margin: 0;
   font-weight: bold;
+}
+
+.title {
+  width: 100%;
+  background-color: tomato;
 }
 
 .image {
   width: 30vw;
-  margin-top: 1vh;
 }
 
 @media (max-width: 600px) {
   .container {
-    width: 70vw;
+    width: 100vw;
+    border: none;
   }
 
   .image {
-    width: 70vw;
-    margin-top: 0;
+    width: 100vw;
   }
 }

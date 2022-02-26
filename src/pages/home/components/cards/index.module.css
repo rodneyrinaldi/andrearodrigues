@@ -1,7 +1,25 @@
 .container {
   background-color: #fff;
   width: 100vw;
-  margin: 10vh auto 0;
+  margin: 5vh auto 0;
+}
+
+.title {
+  width: 70vw;
+  margin: auto;
+  margin-bottom: 4vh;
+}
+.title h2 {
+  margin: 0 0 5vh;
+  padding: 4vh;
+  text-align: center;
+  background-color: #b6e6fa;
+  border-radius: 3px;
+  font-family: "Lucida Handwriting", Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.975em;
+  color: #01579b;
 }
 
 .useble {
@@ -12,17 +30,10 @@
   flex-direction: column;
   justify-content: center;
 }
-.useble h2 {
-  margin: 0;
-  padding: 0 0 4vh;
-  text-align: center;
-  color: #424242;
-}
 
 .line {
   width: 70vw;
   list-style: none;
-  /* border: 1px solid silver; */
   -ms-box-orient: horizontal;
   display: -webkit-box;
   display: -moz-box;
@@ -37,7 +48,6 @@
 }
 
 .lineitem {
-  background: tomato;
   width: auto;
   height: auto;
   line-height: auto;
@@ -49,6 +59,19 @@
 
 @media (max-width: 600px) {
   .container {
+    width: 100vw;
+    border: none;
+  }
+
+  .useble {
+    width: 100vw;
+  }
+
+  .title {
+    width: 100vw;
+  }
+  .title h2 {
+    border-radius: 0x;
   }
 
   .line {
@@ -56,7 +79,6 @@
   }
 
   .lineitem {
-    background: tomato;
     width: auto;
     height: auto;
     line-height: auto;
