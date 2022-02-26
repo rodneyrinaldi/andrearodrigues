@@ -5,8 +5,11 @@ import styles from "./index.module.css";
 
 function SideMenu(props) {
   const router = useRouter();
+  const msg =
+    ", especialista em crédito imobiliário do programa Casa Verde e Amarela.  Quais os bairros vc procura? Como posso te ajudar?";
   const wapp =
-    "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá, gostaria de obter maiores informações sobre:";
+    "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá, a consultora Andrea" +
+    msg;
 
   return (
     <>
