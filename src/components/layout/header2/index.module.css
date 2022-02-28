@@ -1,0 +1,47 @@
+.container {
+  background-color: #e9f8ff;
+  position: fixed;
+  z-index: 95;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 6vh;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 8px 6px -6px gray;
+  -moz-box-shadow: 0 8px 6px -6px gray;
+  box-shadow: 0 8px 6px -6px gray;
+}
+
+.logo {
+  height: 4vh;
+  margin-right: 20px;
+}
+
+.title {
+  font-family: "Lucida Handwriting", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.375em;
+  color: #01579b;
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 5vh;
+    border: 1px solid ##2f4f4f;
+    box-shadow: 0 4px ##2f4f4f;
+  }
+
+  .logo {
+    height: 3vh;
+  }
+
+  .title {
+    font-size: 0.875em;
+    color: #01579b;
+  }
+}

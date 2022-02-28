@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "nome1",
+    "titulo": "nome 1",
+    "descricao": "nome 1",
+    "descricaolonga": "nome 1",
+    "bairro": "Socorro",
+    "quartos": "1",
+    "garagem": "0",
+    "metragem": "40m",
+    "andar": "3",
+    "entrega'": "jan/23",
+    "similar1": "nome2",
+    "similar2": "nome3"
+  },
+  {
+    "nome": "nome2",
+    "titulo": "nome 2",
+    "descricao": "nome 2",
+    "descricaolonga": "nome 2",
+    "bairro": "Socorro",
+    "quartos": "2",
+    "garagem": "1",
+    "metragem": "60m",
+    "andar": "5",
+    "entrega'": "jan/23",
+    "similar1": "nome1",
+    "similar2": "nome3"
+  },
+  {
+    "nome": "nome3",
+    "titulo": "nome 3",
+    "descricao": "nome 3",
+    "descricaolonga": "nome 3",
+    "bairro": "Interlagos",
+    "quartos": "studio",
+    "garagem": "1",
+    "metragem": "50m",
+    "andar": "8",
+    "entrega'": "jan/23",
+    "similar1": "nome1",
+    "similar2": "nome2"
+  }
+]

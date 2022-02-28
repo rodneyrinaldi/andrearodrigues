@@ -4,7 +4,7 @@ import Head from "next/head";
 import Menu from "../menu";
 import styles from "./index.module.css";
 
-function Header2(props) {
+function Header(props) {
   return (
     <>
       <Head>
@@ -28,4 +28,4 @@ function Header2(props) {
   );
 }
 
-export default Header2;
+export default Header;

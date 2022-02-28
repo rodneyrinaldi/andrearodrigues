@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Card from "../../../../components/layout/card";
 
 import styles from "./index.module.css";
@@ -12,22 +14,46 @@ export default function Cards() {
         <div className={styles.useble}>
           <div className={styles.line}>
             <div className={styles.lineitem}>
-              <Card />
+              <Link href="/detail">
+                <a>
+                  <Card />
+                </a>
+              </Link>
             </div>
             <div className={styles.lineitem}>
-              <Card />
+              <Link href="/detail">
+                <a>
+                  <Card />
+                </a>
+              </Link>
             </div>
             <div className={styles.lineitem}>
-              <Card />
+              <Link href="/detail">
+                <a>
+                  <Card />
+                </a>
+              </Link>
             </div>
             <div className={styles.lineitem}>
-              <Card />
+              <Link href="/detail">
+                <a>
+                  <Card />
+                </a>
+              </Link>
             </div>
             <div className={styles.lineitem}>
-              <Card />
+              <Link href="/detail">
+                <a>
+                  <Card />
+                </a>
+              </Link>
             </div>
             <div className={styles.lineitem}>
-              <Card />
+              <Link href="/detail">
+                <a>
+                  <Card />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
