@@ -1,8 +1,42 @@
-import Button from "../../../../components/layout/button";
+import React, { useCallback, useEffect, useState } from "react";
+
+import Select, { OptionTypeBase, Props as SelectProps } from "react-select";
 
 import styles from "./index.module.css";
 
+import garagemData from "../../../../data/garagem.json";
+import quartoData from "../../../../data/quarto.json";
+import bairroData from "../../../../data/bairro.json";
+import imoveiData from "../../../../data/imoveis.json";
+
 export default function Filter() {
+  const [loading, setLoading] = useState(true);
+  const [garagem, setGaragem] = useState(null);
+  const [quarto, setQuarto] = useState(null);
+  const [bairro, setBairro] = useState(null);
+
+  const handleGaragemChange = useCallback((e) => {
+    setGaragem(e.label);
+  }, []);
+
+  const handleQuartoChange = useCallback((e) => {
+    setQuarto(e.label);
+  }, []);
+
+  const handleBairroChange = useCallback((e) => {
+    setBairro(e.label);
+  }, []);
+
+  useEffect(() => {
+    // setLoading(true)
+    // setLoading(false)
+  }, []);
+
+  useEffect(() => {
+    // setLoading(true)
+    // setLoading(false)
+  }, [garagem, quarto, bairro]);
+
   return (
     <>
       <div className={styles.container}>
@@ -11,29 +45,32 @@ export default function Filter() {
             <h4>Busque seu imóvel</h4>
           </div>
 
-          <div className={styles.line}>
-            <select name="garagem" id="garagem">
-              <option value="com garagem">Com garagem</option>
-              <option value="sem garagem">Sem garagem</option>
-            </select>
-            <select name="quartos" id="quartos">
-              <option value="studio">Studio</option>
-              <option value="1 quarto">1 Quarto</option>
-              <option value="2 quarto">2 Quarto</option>
-            </select>
-            <select name="bairros" id="bairros">
-              <option value="Altodaboavista">Alto da boa vista</option>
-              <option value="SantoAmaro">Santo Amaro</option>
-              <option value="Brooklin">Brooklin</option>
-              <option value="Chacarasantoantonio">Santo Amaro</option>
-              <option value="Guarapiranga">Guarapiranga</option>
-              <option value="Interlagos">Interlagos</option>
-              <option value="Marajoara">Marajoara</option>
-              <option value="pedreira">Pedreira</option>
-              <option value="Socorro">Socorro</option>
-              <option value="Veleiros">Veleiros</option>
-            </select>
-          </div>
+          <form>
+            <div className={styles.line}>
+              <Select
+                id="garagem"
+                instanceId="garagem"
+                placeholder="..."
+                options={garagemData}
+                onChange={handleGaragemChange}
+                className={styles.lineselect}
+              />
+              <Select
+                id="quarto"
+                instanceId="quarto"
+                placeholder="..."
+                options={quartoData}
+                className={styles.lineselect}
+              />
+              <Select
+                id="bairro"
+                instanceId="bairro"
+                placeholder="..."
+                options={bairroData}
+                className={styles.lineselect}
+              />
+            </div>
+          </form>
         </div>
       </div>
     </>

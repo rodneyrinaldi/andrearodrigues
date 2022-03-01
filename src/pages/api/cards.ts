@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import records from "../../data/cards.json"
+// import records from "../../data/cards.json"
 
 // type Data = {
 //     nome: string,
@@ -16,6 +16,11 @@ import records from "../../data/cards.json"
 //     similar2: string
 // }
 
+// export default (req: NextApiRequest, res: NextApiResponse) => {
+//     res.status(200).json({ records })
+// }
+
+
 export default (req: NextApiRequest, res: NextApiResponse) => {
-    res.status(200).json({ records })
+    res.status(200).json({})
 }

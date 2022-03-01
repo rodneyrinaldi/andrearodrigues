@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-.line select {
+.lineselect {
   min-width: 17vw;
   padding: 4px 3px;
   font-size: smaller;
@@ -51,7 +51,7 @@
     justify-content: space-evenly;
     gap: 1vh;
   }
-  .line select {
+  .lineselect {
     padding: 6px 3px;
   }
 }

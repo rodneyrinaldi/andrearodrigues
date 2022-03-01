@@ -34,6 +34,17 @@ function SideMenu(props) {
           <img
             width={44}
             target="_blank"
+            src="/sidebar/ask.png"
+            alt="whatsapp"
+          />
+        </a>
+      </div>
+
+      <div className={styles.container}>
+        <a href={wapp} target="_blank">
+          <img
+            width={44}
+            target="_blank"
             src="/sidebar/whatsapp.png"
             alt="whatsapp"
           />
