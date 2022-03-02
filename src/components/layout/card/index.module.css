@@ -12,6 +12,14 @@
 .container:hover {
   box-shadow: -5px 0px 5px 0px #aaaaaa, 5px 0px 5px 0px #aaaaaa;
 }
+.container h2 {
+  margin: 2vh 4vh;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .container p {
   margin: 2vh 4vh;
   font-family: Arial, sans-serif;

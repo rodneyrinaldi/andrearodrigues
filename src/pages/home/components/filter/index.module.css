@@ -15,13 +15,16 @@
   border: 1 solic #e65100;
   border-radius: 6px;
   box-shadow: -5px 0px 5px 0px #aaaaaa, 5px 0px 5px 0px #aaaaaa;
-  background-color: #ffa726;
   color: #424242;
+  background-color: #ffa726;
 }
 .useble h4 {
   margin: 0;
   padding: 0 0 2vh;
   text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.275em;
 }
 
 .line {

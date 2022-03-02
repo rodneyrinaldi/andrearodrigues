@@ -1,4 +1,5 @@
 [
+  { "value": "...", "label": "..." },
   { "value": "Com garagem", "label": "Com garagem" },
   { "value": "Sem garagem", "label": "Sem garagem" }
 ]

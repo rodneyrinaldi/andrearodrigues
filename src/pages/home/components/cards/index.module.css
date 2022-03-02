@@ -13,13 +13,13 @@
   margin: 0 0 5vh;
   padding: 4vh;
   text-align: center;
-  background-color: #b6e6fa;
   border-radius: 3px;
   font-family: "Lucida Handwriting", Times, serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 0.975em;
   color: #01579b;
+  background-color: #b6e6fa;
 }
 
 .useble {

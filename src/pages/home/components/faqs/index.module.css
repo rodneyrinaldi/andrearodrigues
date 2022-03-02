@@ -12,7 +12,8 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 3px;
-  background-color: #ffa726;
+  color: #424242;
+  background-color: #faf7b6;
 }
 .useble h2 {
   margin: 0;

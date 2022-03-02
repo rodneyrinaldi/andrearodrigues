@@ -9,9 +9,9 @@ function Card(props) {
         <img src="./building/imovel0.png" alt="" className={styles.image} />
         <div className={styles.title}>
           <p>
-            <b>SPPACE</b>
+            <h2>{props.title}</h2>
           </p>
-          <p>Jardim Botânico</p>
+          <p>{props.description}</p>
         </div>
       </div>
     </>
