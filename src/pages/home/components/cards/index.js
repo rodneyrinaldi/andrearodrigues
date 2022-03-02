@@ -23,10 +23,14 @@ export default function Cards() {
           <div className={styles.line}>
             {isUpdated
               ? dataUpdated.map((data) => (
-                  <div className={styles.lineitem}>
-                    <Link href="/carddetail">
-                      <a>
-                        <Card title={data.nome} description={data.descricao} />
+                  <div id={data.nome + "div"} className={styles.lineitem}>
+                    <Link id={data.nome + "link"} href="/carddetail">
+                      <a id={data.nome + "a"}>
+                        <Card
+                          id={data.nome + "card"}
+                          title={data.nome}
+                          description={data.descricao}
+                        />
                       </a>
                     </Link>
                   </div>

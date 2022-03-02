@@ -2,6 +2,7 @@
   {
     "nome": "nome1",
     "titulo": "nome 1",
+    "sugestao": "ok",
     "descricao": "descricao nome 1",
     "descricaolonga": "nome 1",
     "bairro": "Socorro",
@@ -16,6 +17,7 @@
   {
     "nome": "nome2",
     "titulo": "nome 2",
+    "sugestao": "",
     "descricao": "descricao nome 2",
     "descricaolonga": "nome 2",
     "bairro": "Socorro",
@@ -30,6 +32,7 @@
   {
     "nome": "nome3",
     "titulo": "nome 3",
+    "sugestao": "",
     "descricao": "descricao nome 3",
     "descricaolonga": "nome 3",
     "bairro": "Interlagos",

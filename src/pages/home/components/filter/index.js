@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import Select, { OptionTypeBase, Props as SelectProps } from "react-select";
 
+import { CardsListContext } from "../../../../contexts/cardslist";
+
 import styles from "./index.module.css";
 
 import imovelData from "../../../../data/imoveis.json";
@@ -9,20 +11,21 @@ import quartoData from "../../../../data/quarto.json";
 import bairroData from "../../../../data/bairro.json";
 
 export default function Filter() {
-  const [isUpdateble, setIsUpdateble] = useState(false);
-  const [cardsList, setCardsList] = useState(null);
+  const { setIsUpdated } = useContext(CardsListContext);
+  const { setDataUpdated } = useContext(CardsListContext);
+  const { dataUpdated } = useContext(CardsListContext);
 
   const [garagem, setGaragem] = useState({
-    value: "Com garagem",
-    label: "Com garagem",
+    value: "...",
+    label: "...",
   });
   const [quarto, setQuarto] = useState({
-    value: "Dois quartos",
-    label: "Dois quartos",
+    value: "...",
+    label: "...",
   });
   const [bairro, setBairro] = useState({
-    value: "Santo Amaro",
-    label: "Santo Amaro",
+    value: "...",
+    label: "...",
   });
 
   function filterImoveis() {
@@ -42,13 +45,12 @@ export default function Filter() {
         : filterData.bairro === bairrolabel);
     const dataImoveis = imovelData.filter(filter);
 
-    setCardsList(dataImoveis);
+    setDataUpdated(dataImoveis);
   }
 
   useEffect(() => {
     filterImoveis();
-    setIsUpdateble(true);
-    setCardsList({ isUpdateble, cardsList });
+    setIsUpdated(true);
   }, [garagem, quarto, bairro]);
 
   return (

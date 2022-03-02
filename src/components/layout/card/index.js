@@ -5,13 +5,16 @@ import styles from "./index.module.css";
 function Card(props) {
   return (
     <>
-      <div className={styles.container}>
-        <img src="./building/imovel0.png" alt="" className={styles.image} />
-        <div className={styles.title}>
-          <p>
-            <h2>{props.title}</h2>
-          </p>
-          <p>{props.description}</p>
+      <div id={props.id + "div"} className={styles.container}>
+        <img
+          id={props.id + "img"}
+          src="./building/imovel0.png"
+          alt=""
+          className={styles.image}
+        />
+        <div id={props.id + "div"} className={styles.title}>
+          <h2 id={props.id + "h2"}>{props.title}</h2>
+          <p id={props.id + "p"}>{props.description}</p>
         </div>
       </div>
     </>

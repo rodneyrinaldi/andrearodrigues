@@ -13,13 +13,13 @@ import imovelData from "../../data/imoveis.json";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
-  const [isUpdated, setIsUpedated] = useState(false);
+  const [isUpdated, setIsUpdated] = useState(false);
   const [dataUpdated, setDataUpdated] = useState({});
 
   useEffect(() => {
-    const filter = (filterData) => filterData.bairro !== "...";
+    const filter = (filterData) => filterData.sugestao == "ok";
     setDataUpdated(imovelData.filter(filter));
-    setIsUpedated(true);
+    setIsUpdated(true);
   }, []);
 
   return (
@@ -29,7 +29,7 @@ export default function Home() {
           isLoading,
           setIsLoading,
           isUpdated,
-          setIsUpedated,
+          setIsUpdated,
           dataUpdated,
           setDataUpdated,
         }}
