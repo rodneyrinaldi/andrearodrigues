@@ -1,78 +1,103 @@
-import React, { useCallback, useEffect, useState } from "react";
-
+import React, { useEffect, useState } from "react";
 import Select, { OptionTypeBase, Props as SelectProps } from "react-select";
+import { CardsListContext } from "../../../../contexts/cardslist";
 
 import styles from "./index.module.css";
 
+import imovelData from "../../../../data/imoveis.json";
 import garagemData from "../../../../data/garagem.json";
 import quartoData from "../../../../data/quarto.json";
 import bairroData from "../../../../data/bairro.json";
-import imoveiData from "../../../../data/imoveis.json";
 
 export default function Filter() {
-  const [loading, setLoading] = useState(true);
-  const [garagem, setGaragem] = useState(null);
-  const [quarto, setQuarto] = useState(null);
-  const [bairro, setBairro] = useState(null);
+  const [cardsList, setCardsList] = useState(null);
 
-  const handleGaragemChange = useCallback((e) => {
-    setGaragem(e.label);
-  }, []);
+  const [garagem, setGaragem] = useState({
+    value: "Com garagem",
+    label: "Com garagem",
+  });
+  const [quarto, setQuarto] = useState({
+    value: "Dois quartos",
+    label: "Dois quartos",
+  });
+  const [bairro, setBairro] = useState({
+    value: "Santo Amaro",
+    label: "Santo Amaro",
+  });
 
-  const handleQuartoChange = useCallback((e) => {
-    setQuarto(e.label);
-  }, []);
+  function filterImoveis() {
+    const { label: garagemlabel } = garagem;
+    const { label: quartolabel } = quarto;
+    const { label: bairrolabel } = bairro;
 
-  const handleBairroChange = useCallback((e) => {
-    setBairro(e.label);
-  }, []);
+    const dataImovel = imovelData
+      .filter(
+        (p) =>
+          p.garagem === garagemlabel &&
+          p.quarto === quartolabel &&
+          p.bairro === bairrolabel
+      )
+      .map((p) => ({
+        garagem: p.garagem,
+        quarto: p.quarto,
+        bairro: p.bairro,
+        nome: p.nome,
+      }));
+
+    // setProcedureOptions(dataProcedure);
+    console.log(dataImovel);
+  }
+
+  useEffect(() => {}, []);
 
   useEffect(() => {
-    // setLoading(true)
-    // setLoading(false)
-  }, []);
-
-  useEffect(() => {
-    // setLoading(true)
-    // setLoading(false)
+    filterImoveis();
+    setCardsList({ garagem, quarto, bairro, cardsList });
   }, [garagem, quarto, bairro]);
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.useble}>
-          <div>
-            <h4>Busque seu imóvel</h4>
-          </div>
-
-          <form>
-            <div className={styles.line}>
-              <Select
-                id="garagem"
-                instanceId="garagem"
-                placeholder="..."
-                options={garagemData}
-                onChange={handleGaragemChange}
-                className={styles.lineselect}
-              />
-              <Select
-                id="quarto"
-                instanceId="quarto"
-                placeholder="..."
-                options={quartoData}
-                className={styles.lineselect}
-              />
-              <Select
-                id="bairro"
-                instanceId="bairro"
-                placeholder="..."
-                options={bairroData}
-                className={styles.lineselect}
-              />
+      <CardsListContext.Provider value={cardsList}>
+        <div className={styles.container}>
+          <div className={styles.useble}>
+            <div>
+              <h4>Busque seu imóvel</h4>
             </div>
-          </form>
+
+            <form>
+              <div className={styles.line}>
+                <Select
+                  id="garagem"
+                  instanceId="garagem"
+                  options={garagemData}
+                  defaultValue={garagem}
+                  onChange={setGaragem}
+                  isSearchable={false}
+                  className={styles.lineselect}
+                />
+                <Select
+                  id="quarto"
+                  instanceId="quarto"
+                  options={quartoData}
+                  defaultValue={quarto}
+                  onChange={setQuarto}
+                  isSearchable={false}
+                  className={styles.lineselect}
+                />
+                <Select
+                  id="bairro"
+                  instanceId="bairro"
+                  options={bairroData}
+                  defaultValue={bairro}
+                  onChange={setBairro}
+                  isSearchable={false}
+                  className={styles.lineselect}
+                />
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
+      </CardsListContext.Provider>
     </>
   );
 }

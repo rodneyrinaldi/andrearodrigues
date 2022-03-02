@@ -13,30 +13,9 @@ function SideMenu(props) {
 
   return (
     <>
-      {props.showback === "yes" ? (
-        <div className={styles.container}>
-          <a onClick={() => router.back()}>
-            <img width={44} src="/sidebar/back.png" alt="back" />
-          </a>
-        </div>
-      ) : (
-        <></>
-      )}
-
-      {/* <div className={styles.container}>
-        <a href="#" onClick={() => router.back()}>
-          <img width={44} src="/sidebar/back.png" alt="back" />
-        </a>
-      </div> */}
-
       <div className={styles.container}>
-        <a href={wapp} target="_blank">
-          <img
-            width={44}
-            target="_blank"
-            src="/sidebar/ask.png"
-            alt="whatsapp"
-          />
+        <a onClick={() => router.push("/simulation")}>
+          <img width={44} src="/sidebar/simulation.png" alt="simulação" />
         </a>
       </div>
 
@@ -56,6 +35,16 @@ function SideMenu(props) {
           <img width={44} src="/sidebar/email.png" alt="email" />
         </a>
       </div>
+
+      {props.showback === "yes" ? (
+        <div className={styles.container}>
+          <a onClick={() => router.back()}>
+            <img width={44} src="/sidebar/back.png" alt="back" />
+          </a>
+        </div>
+      ) : (
+        <></>
+      )}
     </>
   );
 }
