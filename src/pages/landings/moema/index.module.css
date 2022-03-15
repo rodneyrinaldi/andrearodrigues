@@ -1,0 +1,15 @@
+.container {
+  position: "relative";
+  width: "100vw";
+  height: "500px";
+}
+
+/* @media (max-width: 900px) {
+  .container {
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+  }
+} */
