@@ -25,7 +25,7 @@ function Page() {
         <div className={styles.header}>
           <h1>imóvelhoje</h1>
           <img src="/logo.png" alt="imóvel hoje nex one sena madureira" />
-          <h1>nex one sena madureira</h1>
+          <h1>sena madureira</h1>
         </div>
 
         <div className={styles.layer}>
