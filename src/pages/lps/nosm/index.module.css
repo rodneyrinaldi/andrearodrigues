@@ -24,10 +24,14 @@
 }
 
 .title {
+  padding: 10px;
   position: absolute;
   top: 16%;
   left: 20%;
   transform: translate(-50%, -50%);
+  background-color: var(--hover-2);
+  border: 1 solic var(--text-primary);
+  border-radius: 6px;
 }
 
 .message {
@@ -36,9 +40,10 @@
   top: 82%;
   left: 74%;
   transform: translate(-50%, -50%);
-  color: #01579b;
-  background-color: #b6e6fa;
-  border: 1 solic #01579b;
+  color: white;
+  background-color: var(--hover-2);
+  border: 1 solic var(--text-primary);
+  border-radius: 6px;
 }
 
 .layer {
@@ -127,6 +132,22 @@
   .header h1 {
     font-size: 1.075em;
     color: #01579b;
+  }
+
+  .image {
+  }
+
+  .title {
+    top: 50%;
+    left: 14%;
+    width: 20%;
+  }
+
+  .message {
+    top: 76%;
+    left: 70%;
+    width: 50%;
+    height: 40%;
   }
 
   .footer a {

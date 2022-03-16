@@ -2,13 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import image0 from "../../../../public/lps/nosm/image0.jpg";
-import image1 from "../../../../public/lps/nosm/image1.jpg";
+import image1 from "../../../../public/lps/nosm/image1.png";
 import image2 from "../../../../public/lps/nosm/image2.jpg";
 import image3 from "../../../../public/lps/nosm/image3.jpg";
 import image4 from "../../../../public/lps/nosm/image4.jpg";
 import image5 from "../../../../public/lps/nosm/image5.jpg";
 import image6 from "../../../../public/lps/nosm/image6.jpg";
 import image7 from "../../../../public/lps/nosm/image7.jpg";
+import image8 from "../../../../public/lps/nosm/image8.jpg";
 import styles from "./index.module.css";
 
 function Page() {
@@ -32,11 +33,10 @@ function Page() {
           <div className={styles.image}>
             <Image alt="" src={image0} layout="responsive" objectFit="none" />
             <div className={styles.title}>
-              <h2>NEX ONE</h2>
-              <h2>Sena Madureira</h2>
+              <Image alt="" src={image1} width="100%" height="100%" />
             </div>
             <div className={styles.message}>
-              <h2>Comunicação</h2>
+              <p>Comunicação</p>
             </div>
           </div>
         </div>
@@ -48,9 +48,6 @@ function Page() {
 
         <div className={styles.layer2col}>
           <div className={styles.cards}>
-            <div className={styles.card}>
-              <Image alt="" src={image1} width="700" height="400" />
-            </div>
             <div className={styles.card}>
               <Image alt="" src={image2} width="700" height="400" />
             </div>
@@ -65,6 +62,9 @@ function Page() {
             </div>
             <div className={styles.card}>
               <Image alt="" src={image6} width="700" height="400" />
+            </div>
+            <div className={styles.card}>
+              <Image alt="" src={image7} width="700" height="400" />
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ function Page() {
         </div>
 
         <div className={styles.map}>
-          <Image alt="" src={image7} layout="responsive" objectFit="none" />
+          <Image alt="" src={image8} layout="responsive" objectFit="none" />
         </div>
 
         <div className={styles.footer}>
