@@ -25,11 +25,20 @@ function Page() {
         <div className={styles.header}>
           <h1>imóvelhoje</h1>
           <img src="/logo.png" alt="imóvel hoje nex one sena madureira" />
-          <h1>sena madureira</h1>
+          <h1>oportunidade</h1>
         </div>
 
         <div className={styles.layer}>
-          <Image alt="" src={image0} layout="responsive" objectFit="none" />
+          <div className={styles.image}>
+            <Image alt="" src={image0} layout="responsive" objectFit="none" />
+            <div className={styles.title}>
+              <h2>NEX ONE</h2>
+              <h2>Sena Madureira</h2>
+            </div>
+            <div className={styles.message}>
+              <h2>Comunicação</h2>
+            </div>
+          </div>
         </div>
 
         <div className={styles.layer}>

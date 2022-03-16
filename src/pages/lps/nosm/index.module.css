@@ -20,24 +20,39 @@
   color: #01579b;
 }
 
-.layer {
-  position: "relative";
-  width: "100vw";
+.image {
 }
 
-.layerdark {
-  margin: 5vh 0;
-  position: "relative";
-  width: "100vw";
+.title {
+  position: absolute;
+  top: 16%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.message {
+  padding: 2vh 5vw;
+  position: absolute;
+  top: 82%;
+  left: 74%;
+  transform: translate(-50%, -50%);
   color: #01579b;
   background-color: #b6e6fa;
   border: 1 solic #01579b;
 }
 
-.map {
-  position: "relative";
-  width: "100vw";
-  border: 1px solid #ccc;
+.layer {
+  position: relative;
+  width: 100vw;
+}
+
+.layerdark {
+  margin: 5vh 0;
+  position: relative;
+  width: 100vw;
+  color: #01579b;
+  background-color: #b6e6fa;
+  border: 1 solic #01579b;
 }
 
 .layer2col {
@@ -46,6 +61,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.map {
+  position: relative;
+  width: 100vw;
+  border: 1px solid #ccc;
 }
 
 .cards {
