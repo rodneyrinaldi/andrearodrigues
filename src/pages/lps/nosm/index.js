@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import image0 from "../../../../public/landing/moema/image0.jpg";
-import image1 from "../../../../public/landing/moema/image1.jpg";
-import image2 from "../../../../public/landing/moema/image2.jpg";
-import image3 from "../../../../public/landing/moema/image3.jpg";
-import image4 from "../../../../public/landing/moema/image4.jpg";
-import image5 from "../../../../public/landing/moema/image5.jpg";
-import image6 from "../../../../public/landing/moema/image6.jpg";
-import image7 from "../../../../public/landing/moema/image7.jpg";
+import image0 from "../../../../public/lps/nosm/image0.jpg";
+import image1 from "../../../../public/lps/nosm/image1.jpg";
+import image2 from "../../../../public/lps/nosm/image2.jpg";
+import image3 from "../../../../public/lps/nosm/image3.jpg";
+import image4 from "../../../../public/lps/nosm/image4.jpg";
+import image5 from "../../../../public/lps/nosm/image5.jpg";
+import image6 from "../../../../public/lps/nosm/image6.jpg";
+import image7 from "../../../../public/lps/nosm/image7.jpg";
 import styles from "./index.module.css";
 
 function Page() {
@@ -24,8 +24,8 @@ function Page() {
       <div>
         <div className={styles.header}>
           <h1>imóvelhoje</h1>
-          <img src="/logo.png" alt="minha casa meu lar" />
-          <h1>moema</h1>
+          <img src="/logo.png" alt="imóvel hoje nex one sena madureira" />
+          <h1>nex one sena madureira</h1>
         </div>
 
         <div className={styles.layer}>
