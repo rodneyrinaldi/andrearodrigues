@@ -60,13 +60,19 @@ function Page() {
           </div>
         </div>
 
-        <div className={styles.layer}>
+        <div className={styles.layerdark}>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <br />
           <br />
         </div>
 
         <div className={styles.layer}>
-          <br />
           <br />
         </div>
 
