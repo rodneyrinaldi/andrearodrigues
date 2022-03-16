@@ -8,6 +8,7 @@ import image3 from "../../../../public/landing/moema/image3.jpg";
 import image4 from "../../../../public/landing/moema/image4.jpg";
 import image5 from "../../../../public/landing/moema/image5.jpg";
 import image6 from "../../../../public/landing/moema/image6.jpg";
+import image7 from "../../../../public/landing/moema/image7.jpg";
 import styles from "./index.module.css";
 
 function Page() {
@@ -32,8 +33,6 @@ function Page() {
         </div>
 
         <div className={styles.layer}>
-          <br />
-          <div>text</div>
           <br />
           <br />
         </div>
@@ -63,17 +62,18 @@ function Page() {
 
         <div className={styles.layer}>
           <br />
-          <div>text</div>
-          <br />
           <br />
         </div>
 
         <div className={styles.layer}>
           <br />
-          <div>text</div>
-          <br />
           <br />
         </div>
+
+        <div className={styles.map}>
+          <Image alt="" src={image7} layout="responsive" objectFit="none" />
+        </div>
+
         <div className={styles.footer}>
           <a href="https://dev.rodneyrinaldi.com">dev.rodneyrinaldi.com</a>
           <a href="https://imovelhoje.com.br">imovelhoje.com.br</a>
