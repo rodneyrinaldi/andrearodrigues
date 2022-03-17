@@ -60,7 +60,9 @@
   border: 1 solic #01579b;
 }
 
-.layer2col {
+.layercols {
+  padding: 2vh 2vw 0;
+  width: 100vw;
   background-color: #fff;
   width: 100vw;
   display: flex;
@@ -76,6 +78,7 @@
 
 .cards {
   padding: 0 10vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -138,14 +141,14 @@
   }
 
   .title {
-    top: 50%;
+    top: 32%;
     left: 14%;
     width: 20%;
   }
 
   .message {
     top: 76%;
-    left: 70%;
+    left: 72%;
     width: 50%;
     height: 40%;
   }

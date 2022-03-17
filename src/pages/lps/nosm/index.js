@@ -41,12 +41,15 @@ function Page() {
           </div>
         </div>
 
-        <div className={styles.layer}>
-          <br />
-          <br />
+        <div className={styles.layercols}>
+          <div className={styles.cards}>
+            <Image alt="" src={image2} width="60" height="60" />
+            <Image alt="" src={image2} width="60" height="60" />
+            <Image alt="" src={image2} width="60" height="60" />
+          </div>
         </div>
 
-        <div className={styles.layer2col}>
+        <div className={styles.layercols}>
           <div className={styles.cards}>
             <div className={styles.card}>
               <Image alt="" src={image2} width="700" height="400" />
