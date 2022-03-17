@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import button1 from "../../../../public/lps/nosm/button1.png";
+import button2 from "../../../../public/lps/nosm/button2.png";
 import image0 from "../../../../public/lps/nosm/image0.jpg";
 import image1 from "../../../../public/lps/nosm/image1.png";
 import image2 from "../../../../public/lps/nosm/image2.jpg";
@@ -36,16 +38,15 @@ function Page() {
               <Image alt="" src={image1} width="100%" height="100%" />
             </div>
             <div className={styles.message}>
-              <p>Comunicação</p>
+              <p>Sena Madureira</p>
             </div>
           </div>
         </div>
 
         <div className={styles.layercols}>
           <div className={styles.cards}>
-            <Image alt="" src={image2} width="60" height="60" />
-            <Image alt="" src={image2} width="60" height="60" />
-            <Image alt="" src={image2} width="60" height="60" />
+            <Image alt="" src={button1} width="40" height="40" />
+            <Image alt="" src={button2} width="40" height="40" />
           </div>
         </div>
 

@@ -29,21 +29,26 @@
   top: 16%;
   left: 20%;
   transform: translate(-50%, -50%);
-  background-color: var(--hover-2);
-  border: 1 solic var(--text-primary);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 6px;
 }
 
 .message {
-  padding: 2vh 5vw;
+  padding: 1vh 2vw;
   position: absolute;
+  height: 50px;
+  width: 300px;
   top: 82%;
   left: 74%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: var(--hover-2);
-  border: 1 solic var(--text-primary);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 6px;
+  text-align: center;
+}
+.message p {
+  margin: 0;
+  padding: 0;
 }
 
 .layer {
@@ -149,8 +154,8 @@
   .message {
     top: 76%;
     left: 72%;
-    width: 50%;
-    height: 40%;
+    width: 170px;
+    height: 50px;
   }
 
   .footer a {
