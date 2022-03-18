@@ -13,6 +13,7 @@ import image5 from "../../../../public/lps/nosm/image5.jpg";
 import image6 from "../../../../public/lps/nosm/image6.jpg";
 import image7 from "../../../../public/lps/nosm/image7.jpg";
 import image8 from "../../../../public/lps/nosm/image8.jpg";
+import Email from "../../../components/email";
 import styles from "./index.module.css";
 
 function Page() {
@@ -56,7 +57,7 @@ function Page() {
                 </a>
               </div>
               <div>
-                <a onClick={() => router.push("/message")}>
+                <a href="#emailLayer">
                   <Image alt="" src={button2} width="60" height="60" />
                 </a>
               </div>
@@ -85,29 +86,70 @@ function Page() {
               </a>
             </div>
             <div className={styles.card}>
-              <Image alt="" src={image3} width="700" height="400" />
+              <a
+                onClick={() =>
+                  window.open(
+                    "https://imovelhoje.com.br/lps/nosm/image3.jpg",
+                    "_blank"
+                  )
+                }
+              >
+                <Image alt="" src={image3} width="700" height="400" />
+              </a>
             </div>
             <div className={styles.card}>
-              <Image alt="" src={image4} width="700" height="400" />
+              <a
+                onClick={() =>
+                  window.open(
+                    "https://imovelhoje.com.br/lps/nosm/image4.jpg",
+                    "_blank"
+                  )
+                }
+              >
+                <Image alt="" src={image4} width="700" height="400" />
+              </a>
             </div>
             <div className={styles.card}>
-              <Image alt="" src={image5} width="700" height="400" />
+              <a
+                onClick={() =>
+                  window.open(
+                    "https://imovelhoje.com.br/lps/nosm/image5.jpg",
+                    "_blank"
+                  )
+                }
+              >
+                <Image alt="" src={image5} width="700" height="400" />
+              </a>
             </div>
             <div className={styles.card}>
-              <Image alt="" src={image6} width="700" height="400" />
+              <a
+                onClick={() =>
+                  window.open(
+                    "https://imovelhoje.com.br/lps/nosm/image6.jpg",
+                    "_blank"
+                  )
+                }
+              >
+                <Image alt="" src={image6} width="700" height="400" />
+              </a>
             </div>
             <div className={styles.card}>
-              <Image alt="" src={image7} width="700" height="400" />
+              <a
+                onClick={() =>
+                  window.open(
+                    "https://imovelhoje.com.br/lps/nosm/image7.jpg",
+                    "_blank"
+                  )
+                }
+              >
+                <Image alt="" src={image7} width="700" height="400" />
+              </a>
             </div>
           </div>
         </div>
 
-        <div className={styles.layerdark}>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <div name="emailLayer" id="emailLayer" className={styles.layerdark}>
+          <Email />
         </div>
 
         <div className={styles.layer}>

@@ -72,10 +72,9 @@
 }
 
 .layerdark {
-  margin: 5vh 0;
+  padding: 4vh 10vw;
   position: relative;
   width: 100vw;
-  color: #01579b;
   background-color: #b6e6fa;
   border: 1 solic #01579b;
 }

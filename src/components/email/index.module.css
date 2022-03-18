@@ -1,10 +1,11 @@
 .container {
   display: flex;
+  display: flex;
+  justify-content: center;
 }
 
 .container div {
-  width: 80vw;
-  max-width: 600px;
+  width: 60vw;
 }
 
 .container div form div {
@@ -104,7 +105,7 @@
   justify-content: center;
   width: 100%;
   color: #fff;
-  background: rgb(13, 23, 28);
+  background: var(--green);
   border-radius: 5px;
   padding: 8px 0;
   font-weight: 600;
