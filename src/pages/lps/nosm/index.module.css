@@ -152,7 +152,8 @@
 
 @media (max-width: 600px) {
   .header {
-    height: 8vh;
+    margin-top: 2vh;
+    height: 6vh;
     border: 1px solid ##2f4f4f;
     box-shadow: 0 4px ##2f4f4f;
   }
