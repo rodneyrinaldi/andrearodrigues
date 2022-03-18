@@ -153,10 +153,7 @@ function Page() {
         </div>
 
         <div className={styles.layer}>
-          <h1>
-            Clique no mapa para ir ao para a localização do lançamento
-            <sup>2</sup>
-          </h1>
+          <h1>Clique no mapa para ir ao para a localização do lançamento</h1>
         </div>
 
         <div className={styles.map}>
