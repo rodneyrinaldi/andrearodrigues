@@ -1,7 +1,7 @@
 .header {
   background-color: #fff;
   width: 100vw;
-  height: 10vh;
+  height: 14vh;
   padding: 5px 15px;
   display: flex;
   flex-direction: row;
@@ -152,7 +152,7 @@
 
 @media (max-width: 600px) {
   .header {
-    height: 6vh;
+    height: 8vh;
     border: 1px solid ##2f4f4f;
     box-shadow: 0 4px ##2f4f4f;
   }
