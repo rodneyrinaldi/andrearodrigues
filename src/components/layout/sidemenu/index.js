@@ -1,6 +1,5 @@
-import React from "react";
 import { useRouter } from "next/router";
-
+import React from "react";
 import styles from "./index.module.css";
 
 function SideMenu(props) {
@@ -20,7 +19,7 @@ function SideMenu(props) {
       </div>
 
       <div className={styles.container}>
-        <a href={wapp} target="_blank">
+        <a href={wapp} target="_blank" rel="noreferrer">
           <img
             width={44}
             target="_blank"

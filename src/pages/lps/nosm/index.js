@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 import button1 from "../../../../public/lps/nosm/button1.png";
 import button2 from "../../../../public/lps/nosm/button2.png";
@@ -15,6 +16,13 @@ import image8 from "../../../../public/lps/nosm/image8.jpg";
 import styles from "./index.module.css";
 
 function Page() {
+  const router = useRouter();
+  const msg =
+    ", especialista em crédito imobiliário do programa Casa Verde e Amarela.  Quais os bairros vc procura? Como posso te ajudar?";
+  const wapp =
+    "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá, a consultora Andrea" +
+    msg;
+
   return (
     <>
       <Head>
@@ -34,20 +42,32 @@ function Page() {
         <div className={styles.layer}>
           <div className={styles.image}>
             <Image alt="" src={image0} layout="responsive" objectFit="none" />
-            <div className={styles.title}>
-              <Image alt="" src={image1} width="100%" height="100%" />
-            </div>
             <div className={styles.message}>
-              <p>Sena Madureira</p>
+              <div>
+                <a href={wapp} target="_blank" rel="noreferrer">
+                  <Image alt="" src={button1} width="60" height="60" />
+                </a>
+              </div>
+              <div>
+                <a onClick={() => router.push("/message")}>
+                  <Image alt="" src={button2} width="60" height="60" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className={styles.layercols}>
-          <div className={styles.cards}>
-            <Image alt="" src={button1} width="40" height="40" />
-            <Image alt="" src={button2} width="40" height="40" />
+        <div className={styles.layer}>
+          <div className={styles.title}>
+            <Image alt="" src={image1} width="100%" height="100%" />
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1>
+            Lançamento Sena Madureira 13.000 m<sup>2</sup>
+          </h1>
         </div>
 
         <div className={styles.layercols}>

@@ -26,8 +26,8 @@
 .title {
   padding: 10px;
   position: absolute;
-  top: 16%;
-  left: 20%;
+  top: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 6px;
@@ -36,24 +36,33 @@
 .message {
   padding: 1vh 2vw;
   position: absolute;
-  height: 50px;
-  width: 300px;
-  top: 82%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 20%;
+  top: 68%;
   left: 74%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 6px;
   text-align: center;
 }
-.message p {
-  margin: 0;
-  padding: 0;
+.message div {
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.message div:hover {
+  opacity: 1;
 }
 
 .layer {
   position: relative;
   width: 100vw;
+}
+.layer h1 {
+  text-align: center;
+}
+.layer h1 sup {
+  font-size: 14px;
 }
 
 .layerdark {
@@ -66,7 +75,7 @@
 }
 
 .layercols {
-  padding: 2vh 2vw 0;
+  padding: 2vh 0 0;
   width: 100vw;
   background-color: #fff;
   width: 100vw;
@@ -82,7 +91,7 @@
 }
 
 .cards {
-  padding: 0 10vw;
+  padding: 0 8vw;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -145,17 +154,35 @@
   .image {
   }
 
+  .layer h1 {
+    font-size: 18px;
+  }
+  .layer h1 sup {
+    font-size: 12px;
+  }
+
   .title {
-    top: 32%;
-    left: 14%;
-    width: 20%;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    width: 22%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
   }
 
   .message {
-    top: 76%;
-    left: 72%;
-    width: 170px;
-    height: 50px;
+    top: 60%;
+    left: 60%;
+    width: 20%;
+  }
+  .message div {
+    padding: 10px;
+  }
+
+  .cards {
+    padding: 0 4vw;
   }
 
   .footer a {
