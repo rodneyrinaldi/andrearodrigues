@@ -2,10 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
+import logo from "../../../../public/logo.png";
 import button1 from "../../../../public/lps/nosm/button1.png";
 import button2 from "../../../../public/lps/nosm/button2.png";
 import image0 from "../../../../public/lps/nosm/image0.jpg";
-import image1 from "../../../../public/lps/nosm/image1.png";
 import image2 from "../../../../public/lps/nosm/image2.jpg";
 import image3 from "../../../../public/lps/nosm/image3.jpg";
 import image4 from "../../../../public/lps/nosm/image4.jpg";
@@ -23,6 +23,11 @@ function Page() {
     "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá, a consultora Andrea" +
     msg;
 
+  function showUp() {
+    openImage();
+  }
+  function openImage() {}
+
   return (
     <>
       <Head>
@@ -35,7 +40,9 @@ function Page() {
       <div>
         <div className={styles.header}>
           <h1>imóvelhoje</h1>
-          <img src="/logo.png" alt="imóvel hoje nex one sena madureira" />
+          <span>
+            <Image alt="" src={logo} width="10" height="10" />
+          </span>
           <h1>oportunidade</h1>
         </div>
 
@@ -58,13 +65,6 @@ function Page() {
         </div>
 
         <div className={styles.layer}>
-          <div className={styles.title}>
-            <Image alt="" src={image1} width="100%" height="100%" />
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
           <h1>
             Lançamento Sena Madureira 13.000 m<sup>2</sup>
           </h1>
@@ -73,7 +73,16 @@ function Page() {
         <div className={styles.layercols}>
           <div className={styles.cards}>
             <div className={styles.card}>
-              <Image alt="" src={image2} width="700" height="400" />
+              <a
+                onClick={() =>
+                  window.open(
+                    "https://imovelhoje.com.br/lps/nosm/image2.jpg",
+                    "_blank"
+                  )
+                }
+              >
+                <Image alt="" src={image2} width="700" height="400" />
+              </a>
             </div>
             <div className={styles.card}>
               <Image alt="" src={image3} width="700" height="400" />
@@ -99,18 +108,24 @@ function Page() {
           <br />
           <br />
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
         </div>
 
         <div className={styles.layer}>
           <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
 
         <div className={styles.map}>
-          <Image alt="" src={image8} layout="responsive" objectFit="none" />
+          <a
+            href={"https://goo.gl/maps/iRv29gUQVQ4pzBak9"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image alt="" src={image8} layout="responsive" objectFit="none" />
+          </a>
         </div>
 
         <div className={styles.footer}>
