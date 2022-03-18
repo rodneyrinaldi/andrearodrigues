@@ -64,7 +64,7 @@
   font-family: ‘Nunito’, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.11em;
+  font-size: 2.5em;
 }
 .layer h1 sup {
   font-size: 16px;
@@ -88,7 +88,7 @@
 }
 
 .layercols {
-  padding: 2vh 0 0;
+  padding: 2vh 0 4vh;
   width: 100vw;
   background-color: #fff;
   width: 100vw;
@@ -178,7 +178,7 @@
   }
 
   .layer h1 {
-    font-size: 22px;
+    font-size: 26px;
   }
   .layer h1 sup {
     padding-left: 3px;
