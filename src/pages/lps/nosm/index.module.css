@@ -13,7 +13,7 @@
 }
 .header h1 {
   margin: 0 10px;
-  font-family: "Lucida Handwriting", Times, serif;
+  font-family: ‘Nunito’, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.875em;
@@ -59,16 +59,24 @@
   width: 100vw;
 }
 .layer h1 {
+  text-align: center;
+  color: #222222;
+  font-family: ‘Nunito’, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.11em;
+}
+.layer h1 sup {
+  font-size: 16px;
+}
+.layer h2 {
   padding-top: 2vh;
   text-align: center;
-  font-family: "Lucida Handwriting", Times, serif;
+  color: #444444;
+  font-family: ‘Nunito’, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.875em;
-}
-
-.layer h1 sup {
-  font-size: 14px;
 }
 
 .layerdark {
@@ -170,10 +178,14 @@
   }
 
   .layer h1 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .layer h1 sup {
+    padding-left: 3px;
     font-size: 12px;
+  }
+  .layer h2 {
+    font-size: 16px;
   }
 
   .title {

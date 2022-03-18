@@ -19,9 +19,9 @@ import styles from "./index.module.css";
 function Page() {
   const router = useRouter();
   const msg =
-    ", especialista em crédito imobiliário do programa Casa Verde e Amarela.  Quais os bairros vc procura? Como posso te ajudar?";
+    "estou interessado neste empreendimento NEx One da Rua Nhambiquaras, poderia me contatar com mais informações? Obrigado.";
   const wapp =
-    "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá, a consultora Andrea" +
+    "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá consultora, " +
     msg;
 
   function showUp() {
@@ -66,8 +66,9 @@ function Page() {
         </div>
 
         <div className={styles.layer}>
+          <h2>Lançamento de studios rua Nhambiquaras</h2>
           <h1>
-            Lançamento Sena Madureira 13.000 m<sup>2</sup>
+            Moema 13 mil / m<sup>2</sup>
           </h1>
         </div>
 
@@ -153,7 +154,7 @@ function Page() {
         </div>
 
         <div className={styles.layer}>
-          <h1>Clique no mapa para ir ao para a localização do lançamento</h1>
+          <h2>Clique para a visualizar no Google Maps</h2>
         </div>
 
         <div className={styles.map}>
@@ -162,7 +163,7 @@ function Page() {
             target="_blank"
             rel="noreferrer"
           >
-            <Image alt="" src={image8} layout="responsive" objectFit="none" />
+            <Image alt="" src={image8} layout="responsive" objectFit="fill" />
           </a>
         </div>
 
