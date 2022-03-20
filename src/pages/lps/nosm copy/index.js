@@ -13,6 +13,7 @@ import image5 from "../../../../public/lps/nosm/image5.jpg";
 import image6 from "../../../../public/lps/nosm/image6.jpg";
 import image7 from "../../../../public/lps/nosm/image7.jpg";
 import image8 from "../../../../public/lps/nosm/image8.jpg";
+import Email from "../../../components/email";
 import styles from "./index.module.css";
 
 function Page() {
@@ -149,18 +150,7 @@ function Page() {
         </div>
 
         <div name="emailLayer" id="emailLayer" className={styles.layerdark}>
-          <iframe
-            src={
-              "https://docs.google.com/forms/d/e/1FAIpQLScs0zXejlbGXUPsK3zqmm8BYpVgzUscKiPaVmN0sMwnWxZPUg/viewform?embedded=true"
-            }
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            marginHeight="0"
-            marginWidth="0"
-          >
-            Carregando…
-          </iframe>
+          <Email />
         </div>
 
         <div className={styles.layer}>
