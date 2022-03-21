@@ -83,7 +83,7 @@
   padding: 4vh 10vw;
   position: relative;
   width: 100vw;
-  height: 1240px;
+  height: 1000px;
   background-color: #b6e6fa;
   border: 1 solic #01579b;
 }
@@ -187,12 +187,6 @@
   }
   .layer h2 {
     font-size: 16px;
-  }
-
-  .layerdark {
-    padding: 4vh 3vw;
-    width: 100vw;
-    height: 1140px;
   }
 
   .title {
