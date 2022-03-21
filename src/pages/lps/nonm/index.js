@@ -24,6 +24,9 @@ function Page() {
     "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá consultora, " +
     msg;
 
+  // const url = "https://docs.google.com/forms/d/e/1FAIpQLScs0zXejlbGXUPsK3zqmm8BYpVgzUscKiPaVmN0sMwnWxZPUg/viewform?embedded=true";
+  const url = "https://forms.office.com/r/J6pNCapjGR";
+
   function showUp() {
     openImage();
   }
@@ -38,6 +41,7 @@ function Page() {
 
         <title>NEX ONE Moema 13 mil m2</title>
 
+        <meta property="og:url" content="http://imovelhoje.com.br/lps/nonm" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="your fb app id" />
         <meta property="og:title" content="Social Media Preview Working?" />
@@ -164,10 +168,7 @@ function Page() {
           <iframe
             scrolling="no"
             overflow="hidden"
-            src={
-              // "https://docs.google.com/forms/d/e/1FAIpQLScs0zXejlbGXUPsK3zqmm8BYpVgzUscKiPaVmN0sMwnWxZPUg/viewform?embedded=true"
-              "https://forms.office.com/r/J6pNCapjGR"
-            }
+            src={url}
             width="100%"
             height="100%"
             frameBorder="0"
