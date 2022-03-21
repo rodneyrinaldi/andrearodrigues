@@ -5,7 +5,7 @@ function Page() {
   const router = useRouter();
 
   React.useEffect(() => {
-    router.push("/lps/nosm/landing");
+    router.push("/lps/nonm/landing");
   }, []);
 
   return (
