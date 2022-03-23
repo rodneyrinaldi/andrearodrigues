@@ -6,7 +6,6 @@ import logo from "../../../../public/logo.png";
 import button1 from "../../../../public/lps/nonm/button1.png";
 import button2 from "../../../../public/lps/nonm/button2.png";
 import image0 from "../../../../public/lps/nonm/image0.jpg";
-import image1 from "../../../../public/lps/nonm/image1.png";
 import image2 from "../../../../public/lps/nonm/image2.jpg";
 import image3 from "../../../../public/lps/nonm/image3.jpg";
 import image4 from "../../../../public/lps/nonm/image4.jpg";
@@ -14,6 +13,7 @@ import image5 from "../../../../public/lps/nonm/image5.jpg";
 import image6 from "../../../../public/lps/nonm/image6.jpg";
 import image7 from "../../../../public/lps/nonm/image7.jpg";
 import image8 from "../../../../public/lps/nonm/image8.jpg";
+import Meta from "../../../components/meta";
 import styles from "./index.module.css";
 
 function Page() {
@@ -38,20 +38,13 @@ function Page() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
-
-        <title>NEX ONE Moema 13 mil m2</title>
-
-        <meta property="og:url" content="http://imovelhoje.com.br/lps/nonm" />
-        <meta property="og:type" content="website" />
-        <meta property="fb:app_id" content="your fb app id" />
-        <meta property="og:title" content="Social Media Preview Working?" />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          property="og:description"
-          content="Hurray!! Yes Social Media Preview is Working"
-        />
-        <meta property="og:image" content={image1} />
       </Head>
+      <Meta
+        title="NEX ONE Moema 13 mil m2"
+        descrition="Grande lançamento em Moema a 13 mil o metro quadrado"
+        image="https://www.imovelhoje.com.br/lps/nonm/image2.jpg"
+        url="https://www.imovelhoje.com.br/lps/nonm"
+      />
 
       <div>
         <div className={styles.header}>
