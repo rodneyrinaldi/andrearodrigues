@@ -42,7 +42,7 @@ function Page() {
       <Meta
         title="NEX ONE Moema 13 mil m2"
         descrition="Grande lançamento em Moema a 13 mil o metro quadrado"
-        image="https://www.imovelhoje.com.br/lps/nonm/image2.jpg"
+        image="https://www.imovelhoje.com.br/lps/nonm/card.jpg"
         url="https://www.imovelhoje.com.br/lps/nonm"
       />
 
