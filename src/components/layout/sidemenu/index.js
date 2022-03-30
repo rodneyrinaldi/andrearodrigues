@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import React from "react";
 import styles from "./index.module.css";
@@ -20,7 +21,6 @@ function SideMenu(props) {
 
       <div className={styles.container}>
         <a href={wapp} target="_blank" rel="noreferrer">
-          // eslint-disable-next-line @next/next/no-img-element
           <img
             width={44}
             target="_blank"

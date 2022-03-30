@@ -23,9 +23,7 @@ function Page() {
   const wapp =
     "https://api.whatsapp.com/send?phone=+5511975307017&text=Olá consultora, " +
     msg;
-
-  // const url = "https://docs.google.com/forms/d/e/1FAIpQLScs0zXejlbGXUPsK3zqmm8BYpVgzUscKiPaVmN0sMwnWxZPUg/viewform?embedded=true";
-  const url = "https://forms.office.com/r/J6pNCapjGR";
+  const url = "https://forms.office.com/r/39wN6XVNND";
 
   function showUp() {
     openImage();
@@ -170,6 +168,21 @@ function Page() {
           >
             Carregando…
           </iframe>
+          {/* <iframe
+            width="640px"
+            height="480px"
+            src="https://forms.office.com/r/39wN6XVNND?embed=true"
+            frameBorder="0"
+            marginWidth="0"
+            marginHeight="0"
+            style="border: none; max-width:100%; max-height:100vh"
+            allowFullScreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            msallowfullscreen
+          >
+            Carregando…
+          </iframe> */}
         </div>
 
         <div className={styles.layer}>
